@@ -2,8 +2,8 @@ const Sun = ({ className = '' }) => {
 	return (
 		<svg
 			className={className}
-			width="14.000000"
-			height="14.000000"
+			width="0.875rem"
+			height="0.875rem"
 			viewBox="0 0 14 14"
 			fill="none"
 			xmlns="http://www.w3.org/2000/svg"

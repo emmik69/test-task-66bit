@@ -2,8 +2,8 @@ const Moon = ({ className = '' }) => {
 	return (
 		<svg
 			className={className}
-			width="17.000000"
-			height="17.000000"
+			width="1.0625rem"
+			height="1.0625rem"
 			viewBox="0 0 17 17"
 			fill="none"
 			xmlns="http://www.w3.org/2000/svg"

@@ -1,8 +1,8 @@
 const Cross = () => {
 	return (
 		<svg
-			width="10.000000"
-			height="10.000000"
+			width="0.625rem"
+			height="0.625rem"
 			viewBox="0 0 10 10"
 			fill="none"
 			xmlns="http://www.w3.org/2000/svg"
