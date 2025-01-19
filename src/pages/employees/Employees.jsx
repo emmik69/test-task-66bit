@@ -48,13 +48,9 @@ const Employees = () => {
 					if (res.data?.length) {
 						setEmployees((cv) => [...cv, ...res.data]);
 						setPage((cv) => cv + 1);
-					}
-					if (
-						(res.data && !res.data.length) ||
-						res === 'error_request'
-					)
-						setLastPage(true);
+					} else setLastPage(true);
 				})
+				.catch(() => setLastPage(true))
 				.finally(() => setIsLoading(false));
 		} else {
 			setIsLoading(false);
