@@ -18,4 +18,5 @@ export default defineConfig({
 			assets: '/src/assets',
 		},
 	},
+	base: '/test-task-66bit',
 });

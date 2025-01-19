@@ -11,32 +11,37 @@ const Main = lazy(() => import('pages/main/Main.jsx'));
 const Employees = lazy(() => import('pages/employees/Employees.jsx'));
 const Employee = lazy(() => import('pages/employee/Employee.jsx'));
 
-const router = createBrowserRouter([
+const router = createBrowserRouter(
+	[
+		{
+			path: '',
+			element: <MainLayout />,
+			children: [
+				{
+					index: true,
+					element: <Main />,
+				},
+				{
+					path: 'employees',
+					element: <AdapterLayout />,
+					children: [
+						{
+							index: true,
+							element: <Employees />,
+						},
+						{
+							path: ':id',
+							element: <Employee />,
+						},
+					],
+				},
+			],
+		},
+	],
 	{
-		path: '',
-		element: <MainLayout />,
-		children: [
-			{
-				index: true,
-				element: <Main />,
-			},
-			{
-				path: 'employees',
-				element: <AdapterLayout />,
-				children: [
-					{
-						index: true,
-						element: <Employees />,
-					},
-					{
-						path: ':id',
-						element: <Employee />,
-					},
-				],
-			},
-		],
-	},
-]);
+		basename: import.meta.env.BASE_URL,
+	}
+);
 
 function App() {
 	return (
