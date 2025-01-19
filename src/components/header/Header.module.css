@@ -1,0 +1,48 @@
+.header {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: flex-end;
+	column-gap: clamp(1.5rem, 0.5rem + 2.08vw, 3rem);
+
+	padding: clamp(0.625rem, 0.438rem + 0.94vw, 1.563rem)
+		clamp(2.25rem, -3.75rem + 12.5vw, 11.25rem);
+
+	box-shadow: var(--shadow-header);
+}
+.logo-leveler {
+	width: clamp(3.25rem, 2.638rem + 3.06vw, 6.313rem);
+	margin-right: auto;
+}
+.header-list {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	column-gap: clamp(2rem, 0.667rem + 2.78vw, 4rem);
+
+	& a {
+		font: var(--text-regular-s);
+		color: var(--content-primary);
+
+		transition: color 0.3s ease-in-out;
+
+		&:hover {
+			color: var(--accent-primary);
+		}
+	}
+}
+
+@media (max-width: 768px) {
+	.header {
+		padding: clamp(0.625rem, 0.438rem + 0.94vw, 1.563rem)
+			clamp(1.5rem, 0.964rem + 2.68vw, 2.25rem);
+	}
+	.header-list {
+		column-gap: clamp(1rem, -0.239rem + 4.66vw, 2rem);
+	}
+}
+@media (max-width: 425px) {
+	.header-list {
+		display: none;
+	}
+}

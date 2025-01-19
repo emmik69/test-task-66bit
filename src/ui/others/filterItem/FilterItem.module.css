@@ -1,0 +1,10 @@
+.filter-item {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-between;
+	column-gap: 2.25rem;
+
+	font: var(--text-regular-xs);
+	color: var(--content-primary);
+}

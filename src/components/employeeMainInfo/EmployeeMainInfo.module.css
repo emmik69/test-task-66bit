@@ -1,0 +1,40 @@
+.main-info {
+	display: flex;
+	flex-direction: column;
+	row-gap: clamp(1rem, 0.8rem + 1vw, 2rem);
+
+	& > p {
+		font: var(--text-semiBold-xl);
+		color: var(--content-primary);
+	}
+}
+.info-list {
+	display: flex;
+	flex-direction: column;
+	row-gap: clamp(0.75rem, 0.6rem + 0.75vw, 1.5rem);
+}
+.info {
+	display: grid;
+	grid-template-columns: clamp(9.063rem, 7.725rem + 6.69vw, 15.75rem) auto;
+	grid-template-areas: 'type info';
+	column-gap: clamp(0.875rem, 0.5rem + 1.88vw, 2.75rem);
+
+	& > p:first-child {
+		grid-area: type;
+
+		font: var(--text-medium-l);
+		color: var(--content-primary);
+	}
+	& > p:last-child {
+		grid-area: info;
+
+		font: var(--text-regular-l);
+		color: var(--content-primary);
+	}
+}
+
+@media (max-width: 768px) {
+	.main-info {
+		padding: 0 clamp(1.5rem, 0.964rem + 2.68vw, 2.25rem);
+	}
+}

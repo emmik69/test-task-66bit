@@ -1,0 +1,21 @@
+.employee {
+	display: flex;
+	flex-direction: column;
+	row-gap: clamp(1.281rem, 1.031rem + 1.25vw, 2.531rem);
+
+	padding: clamp(0.75rem, 0.7rem + 0.25vw, 1rem)
+		clamp(1.5rem, -5rem + 13.54vw, 11.25rem);
+}
+.not-employee {
+	padding: 1rem;
+
+	text-align: center;
+	color: var(--content-secondary);
+}
+
+@media (max-width: 768px) {
+	.employee {
+		padding: clamp(0.75rem, 0.7rem + 0.25vw, 1rem)
+			clamp(0rem, -1.071rem + 5.36vw, 1.5rem);
+	}
+}
