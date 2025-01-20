@@ -1,8 +1,24 @@
-# React + Vite
+# Test task for 66bit
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Description
 
-Currently, two official plugins are available:
+This project is a SPA application developed using React as part of a test assignment for 66bit. The application displays a list of company employees and their profiles.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Demo
+
+The application is available for viewing at the following link:
+[Demo of the project on GitHub Pages](https://emmik69.github.io/test-task-66bit)
+
+## Installation and launch
+
+1. Cloning a repository: `git clone https://github.com/emmik69/test-task-66bit.git`
+2. Going to the project directory: `cd test-task-66bit`
+3. Installing dependencies: `npm install`
+4. Launching the app: `npm run dev`
+
+## Dependencies
+
+1. MUI - used to display the spinner component.
+2. Redux - used on the employee's profile page to store data about the selected employee in a global state.
+3. qs - used to convert query parameters.
+4. React Toastify - used to display error notifications.
