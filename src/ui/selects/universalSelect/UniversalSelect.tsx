@@ -1,18 +1,21 @@
-import { FC, KeyboardEvent, useRef } from 'react';
+import { KeyboardEvent, ReactNode, useRef } from 'react';
 
-import { IFilter } from '~~>components/filterControl/filterControlData';
 import UniversalList from '~~>ui/others/universalList/UniversalList';
-import FilterItem from '~~>ui/others/filterItem/FilterItem';
 import { ChevronFactory } from '~~>ui/svg/chevronFactory';
 
-import styles from './SelectFilter.module.css';
+import styles from './UniversalSelect.module.css';
 
-type SelectFilterProps = {
-	filter: IFilter;
-	onChange: (_id: number) => void;
+type UniversalSelectProps<T> = {
+	name: string;
+	data: T[];
+	renderItem: (_item: T, _index: number) => ReactNode;
 };
 
-const SelectFilter: FC<SelectFilterProps> = ({ filter, onChange }) => {
+const UniversalSelect = <T extends { id: string | number }>({
+	name,
+	data,
+	renderItem,
+}: UniversalSelectProps<T>) => {
 	const wrapperRef = useRef<HTMLDivElement>(null);
 	const listRef = useRef<HTMLUListElement>(null);
 
@@ -43,24 +46,17 @@ const SelectFilter: FC<SelectFilterProps> = ({ filter, onChange }) => {
 				e.target !== listRef.current && e.preventDefault()
 			}
 		>
-			{filter.name}
+			{name}
 			<UniversalList
 				myRef={listRef}
-				items={filter.categories}
-				renderItem={(item) => (
-					<FilterItem
-						className={styles['filter-item']}
-						title={item.title}
-						state={item.state}
-						onChange={() => onChange(item.id)}
-					/>
-				)}
-				className={styles.select}
+				items={data}
+				renderItem={renderItem}
 				onClick={(e) => e.stopPropagation()}
+				className={styles.select}
 			/>
 			<ChevronFactory type="filter" className={styles['chevron']} />
 		</div>
 	);
 };
 
-export default SelectFilter;
+export default UniversalSelect;

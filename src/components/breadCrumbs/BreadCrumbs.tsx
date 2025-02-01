@@ -7,7 +7,7 @@ import { resetUser } from '~~>store/actions/user';
 import UniversalList from '~~>ui/others/universalList/UniversalList';
 import { ChevronFactory } from '~~>ui/svg/chevronFactory';
 
-import { breadCrumbsData, IBreadCrumb } from './breadCrumbsData';
+import { breadCrumbsData, type IBreadCrumb } from './breadCrumbsData';
 import styles from './BreadCrumbs.module.css';
 
 const BreadCrumbs = () => {

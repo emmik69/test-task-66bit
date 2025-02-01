@@ -61,13 +61,6 @@
 		}
 	}
 }
-.filter-item {
-	transition: color 0.3s ease-in-out;
-
-	&:hover {
-		color: var(--accent-primary);
-	}
-}
 .chevron {
 	width: clamp(0.625rem, 0.55rem + 0.38vw, 1rem);
 	height: clamp(0.313rem, 0.287rem + 0.13vw, 0.438rem);

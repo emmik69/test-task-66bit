@@ -1,10 +1,10 @@
-import { IEmployee } from '~~>pages/employees/Employees';
+import { type IEmployee } from '~~>pages/employees/Employees';
 
 import {
-	GetUserFailedAction,
-	GetUserStartedAction,
-	GetUserSuccessAction,
-	ResetUserAction,
+	type GetUserFailedAction,
+	type GetUserStartedAction,
+	type GetUserSuccessAction,
+	type ResetUserAction,
 	USER_ACTIONS,
 } from '../actions/user';
 

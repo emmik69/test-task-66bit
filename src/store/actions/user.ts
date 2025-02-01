@@ -1,4 +1,4 @@
-import { IEmployee } from '~~>pages/employees/Employees';
+import { type IEmployee } from '~~>pages/employees/Employees';
 
 export enum USER_ACTIONS {
 	'GET_USER_SUCCESS' = 'GET_USER_SUCCESS',

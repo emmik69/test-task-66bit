@@ -2,7 +2,7 @@ import { FC, useState } from 'react';
 import CircularProgress from '@mui/material/CircularProgress';
 
 import basicAvatar from '~~>assets/images/avatar.jpg';
-import { IEmployee } from '~~>pages/employees/Employees';
+import { type IEmployee } from '~~>pages/employees/Employees';
 import UniversalList from '~~>ui/others/universalList/UniversalList';
 import InfoTag from '~~>ui/others/infoTag/InfoTag';
 

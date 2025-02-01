@@ -1,7 +1,7 @@
 import { FC } from 'react';
 
-import { IFilter } from '~~>components/filterControl/filterControlData';
-import SelectFilter from '~~>ui/selects/selectFilter/SelectFilter';
+import { type IFilter } from '~~>components/filterControl/filterControlData';
+import FilterSelect from '~~>components/filterSelect/FilterSelect';
 import UniversalList from '~~>ui/others/universalList/UniversalList';
 
 import styles from './FilterList.module.css';
@@ -16,7 +16,7 @@ const FilterList: FC<FilterListProps> = ({ filterList, onChange }) => {
 		<UniversalList
 			items={filterList}
 			renderItem={(item) => (
-				<SelectFilter key={item.id} filter={item} onChange={onChange} />
+				<FilterSelect key={item.id} filter={item} onChange={onChange} />
 			)}
 			className={styles['list-filters']}
 		/>

@@ -8,7 +8,7 @@ import UniversalList from '~~>ui/others/universalList/UniversalList';
 import InfoTag from '~~>ui/others/infoTag/InfoTag';
 import Cross from '~~>ui/svg/cross/Cross';
 
-import { filterControlData, IFilter } from './filterControlData';
+import { filterControlData, type IFilter } from './filterControlData';
 import styles from './FilterControl.module.css';
 
 const FilterControl = () => {

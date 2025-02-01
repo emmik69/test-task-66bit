@@ -1,5 +1,5 @@
 import { formatDate, formatPhone } from '~~>utils/helpers/entitiesFormat';
-import { IEmployee } from '~~>pages/employees/Employees';
+import { type IEmployee } from '~~>pages/employees/Employees';
 
 export const infoData = (user: IEmployee) => [
 	{

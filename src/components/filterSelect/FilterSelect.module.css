@@ -1,0 +1,7 @@
+.filter-item {
+	transition: color 0.3s ease-in-out;
+
+	&:hover {
+		color: var(--accent-primary);
+	}
+}

@@ -1,4 +1,4 @@
-import { IFilter } from '~~>components/filterControl/filterControlData';
+import { type IFilter } from '~~>components/filterControl/filterControlData';
 
 type IMonths = Record<string, string>;
 

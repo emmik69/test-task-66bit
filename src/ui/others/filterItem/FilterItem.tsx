@@ -1,7 +1,7 @@
 import { FC } from 'react';
 import clsx from 'clsx';
 
-import Checkbox, { CheckboxProps } from '~~>ui/inputs/checkbox/Checkbox';
+import Checkbox, { type CheckboxProps } from '~~>ui/inputs/checkbox/Checkbox';
 
 import styles from './FilterItem.module.css';
 

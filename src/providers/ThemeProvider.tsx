@@ -1,4 +1,10 @@
-import { createContext, Dispatch, FC, ReactNode, SetStateAction } from 'react';
+import {
+	createContext,
+	type Dispatch,
+	FC,
+	ReactNode,
+	type SetStateAction,
+} from 'react';
 
 import useTheme from '~~>customHooks/useTheme';
 

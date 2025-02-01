@@ -1,4 +1,4 @@
-import { useState, useEffect, SetStateAction, Dispatch } from 'react';
+import { useState, useEffect, type SetStateAction, type Dispatch } from 'react';
 
 const detectColorMode = () => {
 	if (
