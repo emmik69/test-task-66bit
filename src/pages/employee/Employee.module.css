@@ -1,0 +1,13 @@
+.employee {
+	display: flex;
+	flex-direction: column;
+	row-gap: clamp(1.281rem, 1.031rem + 1.25vw, 2.531rem);
+
+	padding: clamp(0.625rem, 0.55rem + 0.38vw, 1rem) var(--padding-x-employee);
+}
+.not-employee {
+	padding: 1rem;
+
+	text-align: center;
+	color: var(--content-secondary);
+}

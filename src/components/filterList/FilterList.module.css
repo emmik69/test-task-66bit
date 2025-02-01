@@ -1,0 +1,19 @@
+.list-filters {
+	display: flex;
+	align-items: center;
+	justify-content: flex-end;
+	flex: 1 1 calc((100% - 1rem) / 2);
+	column-gap: clamp(0.75rem, 0.65rem + 1.13vw, 2rem);
+
+	margin-left: auto;
+}
+
+@media (max-width: 48rem) {
+	.list-filters {
+		justify-content: flex-start;
+		flex: 1 1 auto;
+		order: 3;
+
+		margin-left: unset;
+	}
+}

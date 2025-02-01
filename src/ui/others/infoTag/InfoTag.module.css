@@ -1,0 +1,24 @@
+.tag {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+	column-gap: 0.625rem;
+
+	min-width: clamp(4.375rem, 4.125rem + 1.25vw, 5.625rem);
+	padding: 0.625rem;
+	border-radius: 0.3125rem;
+
+	background-color: var(--background-primary);
+
+	font: var(--text-regular-xs);
+	color: var(--content-primary);
+
+	user-select: none;
+	cursor: pointer;
+	transition: background-color 0.3s ease-in-out;
+
+	&:hover {
+		background-color: var(--background-secondary);
+	}
+}
