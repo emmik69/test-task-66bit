@@ -1,0 +1,1 @@
+export { AdapterLayout } from './AdapterLayout';

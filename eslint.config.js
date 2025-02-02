@@ -24,16 +24,11 @@ export default tseslint.config(
 				},
 				alias: {
 					map: [
+						['~~>app', './src/app'],
 						['~~>pages', './src/pages'],
-						['~~>layouts', './src/layouts'],
-						['~~>components', './src/components'],
-						['~~>ui', './src/ui'],
-						['~~>api', './src/api'],
-						['~~>store', './src/store'],
-						['~~>utils', './src/utils'],
-						['~~>customHooks', './src/customHooks'],
-						['~~>providers', './src/providers'],
-						['~~>assets', './src/assets'],
+						['~~>widgets', './src/widgets'],
+						['~~>entities', './src/entities'],
+						['~~>shared', './src/shared'],
 					],
 					extensions: ['.ts', '.tsx'],
 				},
@@ -52,13 +47,13 @@ export default tseslint.config(
 			],
 			'no-console': 'warn',
 			'prefer-const': 'error',
-			'no-unused-vars': 'off',
-			// 'no-unused-vars': [
-			// 	'error',
-			// 	{
-			// 		argsIgnorePattern: '^_',
-			// 	},
-			// ],
+			// 'no-unused-vars': 'off',
+			'no-unused-vars': [
+				'error',
+				{
+					argsIgnorePattern: '^_',
+				},
+			],
 			quotes: ['error', 'single'],
 			'jsx-quotes': ['error', 'prefer-double'],
 			'import/newline-after-import': [

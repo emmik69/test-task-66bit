@@ -16,17 +16,11 @@
 		"jsx": "react-jsx",
 		"baseUrl": "src",
 		"paths": {
+			"~~>app/*": ["app/*"],
 			"~~>pages/*": ["pages/*"],
-			"~~>layouts/*": ["layouts/*"],
-			"~~>components/*": ["components/*"],
-			"~~>ui/*": ["ui/*"],
-			"~~>api": ["api"], // доступ только к index.ts
-			"~~>store/*": ["store/*"],
-			"~~>store": ["store"],
-			"~~>utils/*": ["utils/*"],
-			"~~>customHooks/*": ["customHooks/*"],
-			"~~>providers/*": ["providers/*"],
-			"~~>assets/*": ["assets/*"]
+			"~~>widgets/*": ["widgets/*"],
+			"~~>entities/*": ["entities/*"],
+			"~~>shared/*": ["shared/*"]
 		},
 
 		/* Linting */
